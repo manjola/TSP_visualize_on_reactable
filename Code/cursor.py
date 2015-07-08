@@ -2,6 +2,7 @@ from PySide.QtGui import*
 from PySide.QtCore import* 
 
 class Cursor(QGraphicsItem): 
+   "Cursor works in the simulation as fingers do in the reactable"
    
     def __init__(self): 
         QGraphicsItem.__init__(self)

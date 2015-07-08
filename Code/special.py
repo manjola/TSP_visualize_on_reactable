@@ -2,6 +2,8 @@ from PySide.QtGui import*
 from PySide.QtCore import* 
 
 class Special(QGraphicsItem): 
+    """Special object: the tour can't contain any of the edges the periphery (circle) of
+    "the object. Special Object appears as a square"""
     
     def __init__(self): 
         QGraphicsItem.__init__(self)

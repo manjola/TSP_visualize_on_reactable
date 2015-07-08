@@ -3,7 +3,8 @@ from PySide.QtCore import*
 from math import*
 
 class Edge(QGraphicsItem): 
-     
+    "Edge of the graph"
+    
     def __init__(self, node1, node2, coeff): 
         QGraphicsItem.__init__(self)
         self.node1=node1

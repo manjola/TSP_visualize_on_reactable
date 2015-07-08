@@ -2,7 +2,8 @@ from PySide.QtGui import*
 from PySide.QtCore import* 
 
 class Text(QGraphicsRectItem):
-
+    """Gives the length of the shortest tour"""
+    
     def __init__(self):
         QGraphicsRectItem.__init__(self)
         self.unitext="" 
