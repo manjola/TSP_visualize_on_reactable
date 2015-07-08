@@ -1,0 +1,33 @@
+﻿Build started 6/5/2013 5:37:34 PM.
+     1>Project "C:\Users\LLPadmin.LLPadmin-PC\Desktop\TUIO_CPP\libTUIO.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I.\TUIO /I.\oscpack /AI"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /AI"C:\Program Files\Windows Kits\8.0\References\CommonConfiguration\Neutral" /Zi /clr /nologo /W2 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\libTUIO\\" /Fd"Debug\libTUIO\vc110.pdb" /TP /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\mscorlib.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib oscpack\ip\win32\NetworkingUtils.cpp oscpack\osc\OscOutboundPacketStream.cpp oscpack\osc\OscPrintReceivedElements.cpp oscpack\osc\OscReceivedElements.cpp oscpack\osc\OscTypes.cpp oscpack\ip\win32\UdpSocket.cpp TUIO\TuioClient.cpp TUIO\TuioServer.cpp TUIO\TuioTime.cpp
+         NetworkingUtils.cpp
+         OscOutboundPacketStream.cpp
+         OscPrintReceivedElements.cpp
+         OscReceivedElements.cpp
+         OscTypes.cpp
+         UdpSocket.cpp
+         TuioClient.cpp
+         TuioServer.cpp
+         TuioTime.cpp
+         Generating Code...
+         C:\Program Files\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I.\TUIO /I.\oscpack /Zi /clr /nologo /W2 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\libTUIO\\" /Fd"Debug\libTUIO\vc110.pdb" /TP /analyze- /errorReport:prompt "C:\Users\LLPadmin.LLPadmin-PC\AppData\Local\Temp\.NETFramework,Version=v4.0.AssemblyAttributes.cpp"
+         .NETFramework,Version=v4.0.AssemblyAttributes.cpp
+       Link:
+         C:\Program Files\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"Debug\libTUIO.dll" /INCREMENTAL /NOLOGO ws2_32.lib winmm.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"Debug\libTUIO.pdb" /ASSEMBLYDEBUG /TLBID:1 /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 /SAFESEH /DLL Debug\libTUIO\NetworkingUtils.obj
+         Debug\libTUIO\OscOutboundPacketStream.obj
+         Debug\libTUIO\OscPrintReceivedElements.obj
+         Debug\libTUIO\OscReceivedElements.obj
+         Debug\libTUIO\OscTypes.obj
+         Debug\libTUIO\UdpSocket.obj
+         Debug\libTUIO\TuioClient.obj
+         Debug\libTUIO\TuioServer.obj
+         Debug\libTUIO\TuioTime.obj
+         "Debug\libTUIO\.NETFramework,Version=v4.0.AssemblyAttributes.obj"
+         libTUIO.vcxproj -> C:\Users\LLPadmin.LLPadmin-PC\Desktop\TUIO_CPP\Debug\libTUIO.dll
+     1>Done Building Project "C:\Users\LLPadmin.LLPadmin-PC\Desktop\TUIO_CPP\libTUIO.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:20.31

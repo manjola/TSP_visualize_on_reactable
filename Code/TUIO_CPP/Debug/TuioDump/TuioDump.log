@@ -1,0 +1,21 @@
+﻿Build started 6/5/2013 6:14:17 PM.
+     1>Project "C:\Users\LLPadmin.LLPadmin-PC\Desktop\TUIO_CPP\TuioDump.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I.\TUIO /I.\oscpack /ZI /nologo /W2 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D ENDIANESS=OSC_HOST_LITTLE_ENDIAN /D _VC80_UPGRADE=0x0710 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\TuioDump\\" /Fd"Debug\TuioDump\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt TuioDump.cpp
+         TuioDump.cpp
+       Link:
+         C:\Program Files\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"Debug\TuioDump.exe" /INCREMENTAL /NOLOGO ws2_32.lib WINMM.LIB kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"Debug\TUIO_CPP.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"Debug\TuioDump.lib" /MACHINE:X86 /SAFESEH Debug\TuioDump\TuioClient.obj
+         Debug\TuioDump\TuioDump.obj
+         Debug\TuioDump\TuioTime.obj
+         Debug\TuioDump\NetworkingUtils.obj
+         Debug\TuioDump\OscPrintReceivedElements.obj
+         Debug\TuioDump\OscReceivedElements.obj
+         Debug\TuioDump\OscTypes.obj
+         Debug\TuioDump\UdpSocket.obj
+     1>TuioClient.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+         TuioDump.vcxproj -> C:\Users\LLPadmin.LLPadmin-PC\Desktop\TUIO_CPP\Debug\TuioDump.exe
+     1>Done Building Project "C:\Users\LLPadmin.LLPadmin-PC\Desktop\TUIO_CPP\TuioDump.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.37

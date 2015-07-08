@@ -1,0 +1,28 @@
+﻿Build started 6/5/2013 5:38:56 PM.
+     1>Project "C:\Users\LLPadmin.LLPadmin-PC\Desktop\TUIO_CPP\TuioDemo.vcxproj" on node 2 (Rebuild target(s)).
+     1>ClCompile:
+         C:\Program Files\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I.\TUIO /I.\sdl\include /I.\oscpack /ZI /nologo /W2 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D ENDIANESS=OSC_HOST_LITTLE_ENDIAN /D _VC80_UPGRADE=0x0710 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\TuioDemo\\" /Fd"Debug\TuioDemo\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt TuioDemo.cpp oscpack\ip\win32\NetworkingUtils.cpp oscpack\osc\OscPrintReceivedElements.cpp oscpack\osc\OscReceivedElements.cpp oscpack\osc\OscTypes.cpp oscpack\ip\win32\UdpSocket.cpp TUIO\TuioClient.cpp TUIO\TuioTime.cpp
+         TuioTime.cpp
+         TuioClient.cpp
+         UdpSocket.cpp
+         OscTypes.cpp
+         OscReceivedElements.cpp
+         OscPrintReceivedElements.cpp
+         NetworkingUtils.cpp
+         TuioDemo.cpp
+         Generating Code...
+       Link:
+         C:\Program Files\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"Debug\TuioDemo.exe" /INCREMENTAL /NOLOGO /LIBPATH:.\sdl\lib glut32.lib opengl32.lib glu32.lib sdl.lib sdlmain.lib atlsd.lib ws2_32.lib winmm.lib msvcrtd.lib libcpmtd.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /NODEFAULTLIB /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"Debug\TuioDemo.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"Debug\TuioDemo.lib" /MACHINE:X86 /SAFESEH Debug\TuioDemo\TuioDemo.obj
+         Debug\TuioDemo\NetworkingUtils.obj
+         Debug\TuioDemo\OscPrintReceivedElements.obj
+         Debug\TuioDemo\OscReceivedElements.obj
+         Debug\TuioDemo\OscTypes.obj
+         Debug\TuioDemo\UdpSocket.obj
+         Debug\TuioDemo\TuioClient.obj
+         Debug\TuioDemo\TuioTime.obj
+     1>LINK : fatal error LNK1104: cannot open file 'atlsd.lib'
+     1>Done Building Project "C:\Users\LLPadmin.LLPadmin-PC\Desktop\TUIO_CPP\TuioDemo.vcxproj" (Rebuild target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:07.41

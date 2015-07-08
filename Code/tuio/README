@@ -1,0 +1,15 @@
+### LICENSE and CREDITS
+This peace of software origins from pytuio and has been modified a little bit to make things more easy.
+
+Credits:
+
+Copyright (c) 2007-2008 Jannis Leidel, David Anderson
+Original License: MIT
+Homepage: http://code.google.com/p/pytuio/
+
+### DOCS
+
+Have a look into TuioCallback.py
+There you find more information about how to use this stuff.
+
+
