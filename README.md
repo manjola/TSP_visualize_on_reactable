@@ -1,5 +1,5 @@
 # TSP_visualize_on_reactable
-Project: Dynamic Visualization of Algorithms for Solving the Travelling Salesman Problem (TSP) on a Reactable Machine
+Project: Dynamic Visualization of Algorithms for Solving the Travelling Salesman Problem (TSP) and TSP’s Extensions to Real Word Scenarios on a Reactable Machine
 
 Author: Manushaqe Muco
 
