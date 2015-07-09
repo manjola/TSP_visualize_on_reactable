@@ -1,0 +1,331 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+  <title>TSP_reactable</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <!-- modernizr enables HTML5 elements and feature detects -->
+  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+</head>
+
+<body>
+  <div id="main">
+    <header>
+	  <div id="banner">
+	    <div id="welcome">
+	      <h2 align = "center">Dynamic Visualization of Algorithms for Solving the Travelling Salesman Problem (TSP) and TSP’s Extensions to Real Word Scenarios on a Reactable Machine</h2>
+	    </div><!--close welcome-->			  	
+	  </div><!--close banner-->	
+	</header>
+
+	<nav>
+	  <div id="menubar">
+        <ul id="nav">
+          <li class = "current"><a href="index.html">Project</a></li>
+          <li ><a href="code.html">Code</a></li>
+          <li><a href="videos.html">Videos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div><!--close menubar-->	
+    </nav>	
+    
+	<div id="site_content">		
+	
+      <div class="slideshow"> <img width="940" height="300" src="images/home_1.jpg" />
+	  </div><!--close slideshow-->	
+
+	 
+	
+	  <div id="content">
+        <div class="content_item">
+		<h2 align = "center">Dynamic Visualization of Algorithms for Solving the Travelling Salesman Problem (TSP) and TSP’s Extensions to Real Word Scenarios on a Reactable Machine</h2>
+		<p></p>
+		
+<h2 align = "center">Manushaqe Muco</h2>
+<p align = "center">manjola@mit.edu</p>
+<p></p>
+
+<p align = "center">HGS MathComp </p>
+<p align = "center">Heidelberg Graduate School of Mathematical and Computational Methods for the Sciences</p>
+
+<p align = "center">Ruprecht-Karls-Universität Heidelberg </p>
+<p align = "center">Heidelberg, Germany</p>
+<p></p>
+
+<p align = "center">Supervisors: Prof. Katja Mombaur, Prof. Gerhard Reinelt</p>
+<p></p>
+
+<p align = "center">June 2013 – August 2013</p>
+<p></p>
+<p></p>
+<p></p>
+
+<h2 align = "center">Abstract</h2>
+<p align = "center">I present a tool for visualizing algorithms that solve the Travelling Salesman Problem (TSP), in a fun, dynamic and visually pleasing manner. TSP is extended to represent a simplified version of a real world scenario: travelling between a region of cities, where some roads experience traffic jams and constructions. The tool is meant to be used on a tangible user interface machine called reactable. However, the simulation can also be used on personal computers, though less fun. The tool is built in such a way that it can easily be extended to include other algorithms, aside from TSP.</p>
+<p></p>
+<p></p>
+<p></p>
+
+<h2>1 &#46; &nbsp; Vision </h2>
+<p>I present a tool for visualizing algorithms that solve the Travelling Salesman Problem (TSP), in a fun, dynamic and visually pleasing manner. TSP is extended to represent a simplified version of a real world scenario: travelling between a region of cities, where some roads experience traffic jams and constructions. The tool is meant to be used on a tangible user interface machine called reactable. However, the simulation can also be used on personal computers, though less fun.</p>
+
+<p>The Traveling Salesman Problem, deals with creating the ideal path that a salesman would take while traveling between cities. The solution to any given TSP would be the shortest way to visit a finite number of cities, visiting each city only once, and then returning to the starting point. </p>
+
+<p>A reactable is a device that has a tangible user interface and was originally built as a musical instrument by Music Technology Group at the Universitat Pompeu Fabra, in Barcelona, Spain [1]. At Heidelberg University, the device was rebuilt by students of Prof. Mombaur. However, the reactable is not only a musical instrument: Its graphical interface can also be used to both input data as well as to display computational results in a visually pleasing manner. </p>
+
+<p>The tool is built in such a way that it can easily be extended to include other algorithms, aside from TSP. </p>
+<p></p>
+
+<h2>2 &#46; &nbsp; Elements of the System</h2>
+<p>Here I describe how the elements and design of the system looks in both simulation (computer) and on the reactable. </p>
+
+<h2>2 &#46; 1 &#46; &nbsp; TSP Algorithms </h2>
+<p>The Traveling Salesman Problem, deals with creating the ideal path that a salesman would take while traveling between cities. The solution to any given TSP would be the shortest way to visit a finite number of cities, visiting each city only once, and then returning to the starting point. </p>
+
+<p>TSP is one of the most famous problems of combinatorial optimization and consists of finding a shortest Hamiltonian cycle/tour in a weighted graph. In graph theory, a Hamiltonian path is a path in an undirected or directed graph that visits each vertex exactly once. A Hamiltonian cycle is a Hamiltonian path that is a cycle. </p>
+
+<p>The algorithm I use to describe how the system works for the rest of the paper is called a 2-opt algorithm. </p>
+
+<h2>2 &#46; 1 &#46;  1 &#46; &nbsp; 2-opt</h2>
+<p>In optimization, 2-opt is a simple search algorithm first proposed by Croes in 1958 for solving TSP. A naïve implementation of 2-opt runs in O(n^2). This involves selecting an edge (c1, c2) and searching for another edge (c3, c4), completing a move only if dist(c1, c2) + dist(c3, c4) > dist(c2, c3) + dist(c1, c4). This moves is often referred to as a swap. </p>
+<p></p>
+<div align = "center"><img  src="images/swap.png" />
+<p><i>Picture: A 2-opt swap. 
+dist(c1, c2) + dist(c3, c4) > dist(c2, c3) + dist(c1, c4)</i></p>
+</div>
+
+<p></p>
+
+<div align = "center"><img  src="images/2-opt-move-graph.png" />
+<p><i>Picture: A 2-opt swap in a graph. Original edges in blue.</i></p>
+</div>
+<p></p>
+
+<h2>2 &#46; 2 &#46; &nbsp;  The Reactable Machine </h2>
+<p>A reactable is an electro-acoustic musical instrument with a tangible user interface (TUI). In principle, a reactable is a table, whose surfaces uses a tone-generating computer. The reactable is a table with a translucent panel, which is used wherever possible in a darkened room. The tabletop acts as a backlight display. Below the tabletop is a camera that monitors the action on the table and a projector that projects feedback to the user on the tabletop. So that the projection of the projector does not interfere with the image processing, the camera operates in the infrared spectrum: the tabletop is illuminated by five IR laser diodes. In order to reduce unwanted reflections some polarizing filter is used [2].</p>
+
+<p>The reactable has several blocks that can be placed on its surface. Each block has a unique ID that can be recognized by the camera and then passed to a software for further use. Blocks can be added, removed, rotated. </p>
+
+<p>The use of the reactable is not limited to music. In fact, this project extends the use of the reactable to algorithm visualization, and traffic jam and road construction simulations. </p>
+<p></p>
+
+<div align = "center"><img height = 500px src="images/reactor_light.jpg" />
+<p></p>
+
+<img  height = 400px width = 500px src="images/1.jpg" />
+<p><i>Picture: Reactable photos.</i></p>
+</div>
+<p></p>		
+
+<h2>2 &#46; 3 &#46; &nbsp; Simulator </h2>
+<p>For the simulation of the reactable, I use the TUIO software. More information about this software can be found on its webpage [3]. </p>
+
+<h2>2 &#46; 4 &#46; &nbsp; Graph</h2>
+<p>In a real world scenario, the graph is meant to represent the map of a region, where the nodes are cities, and edges are the roads connecting the cities. The TSP remains the same, however, modernity adds a little twist. Our modern salesman can travel by car. Now, he has to deal with traffic jams, road constructions, etc. </p>
+
+<p>All edges are originally activated, meaning all roads are possible to cross. However, some roads may have a lot of traffic, and the salesman will want to avoid them. I use a special object to denote all the roads that have traffic jams. Those roads can no longer be included in the salesman’s tour because of too much traffic. </p>
+
+<p>Some roads may be under construction. The salesman cannot use these roads to travel. If a road is under construction, the edge will be deactivated, indicating that the salesman cannot use that road. </p>
+
+<h2>2 &#46; 4 &#46; 1 &#46; &nbsp; Nodes (or Normal Objects)</h2>
+<p>A node in the graph is meant to represent a city. Nodes are represented as circles in the graph.
+On the reactable, the nodes are normal blocks. I have recorded the ID of these blocks as node/normal objects.</p> 
+
+<h2>2 &#46; 4 &#46; 2 &#46; &nbsp; Edges </h2>
+<p>The edge connects two nodes. In the graph, it is represented as a line connecting two nodes. On the reactable, it is represented as a line connecting two normal objects/blocks. </p>
+
+<p>The length of the edge is its Euclidian distance units. The edge is black if the edge is activated (no construction on this road). The edge is light-blue if it is deactivated (there’s construction happening on this road). </p>
+
+<h2>2 &#46; 4 &#46; 3 &#46; &nbsp; Special Objects </h2>
+<p>The special objects are represented as squares surrounded by a dashed circle. The circle represents the area that the object affects. If this area touches any of the edges, the edge cannot be included in the tour; the roads touched by the area have traffic jams. </p>
+
+<p>On the reactable, the special objects are blocks, with IDs recorded as special. </p>
+
+<h2>2 &#46; 4 &#46; 4 &#46; &nbsp; Cursor</h2>
+<p>The cursor in the simulation is meant to represent the human fingers on the reactable. </p>
+
+<h2>2 &#46; 5 &#46;  &nbsp; Initializing the graph on a computer </h2>
+<p>By running the <i>main.py</i> file, the user can bring up the TUIO simulator. The blocks on the side can be nodes or special objects. The white square in the middle represents the reactable. The user can drag the blocks on the reactable surface using the cursor. Alongside, the graph representation of what the user is forming will be presented. </p>
+<p></p>
+<div align = "center"><img  height = 600px src="images/tuio_simulator_pic.png" />
+<p><i>Picture: TUIO Simulator.</i></p>
+</div>
+<p></p>
+
+<div align = "center"><img width = 800px src="images/interface.png" />
+<p><i>Figure: TUIO Simulator alongside the Graph Representation.</i></p>
+</div>
+<p></p>
+
+<p>The background is light bluish while the algorithm is running to find a solution. The text will show <i>Current Solution</i>. When the algorithm has found the local optimal solution, the screen will turn green and the text will say <i>Local Optimal</i>, alongside with the value of the optimal tour. The tour is represented by edges colored in blue. </p>
+
+<h2>2 &#46; 6 &#46; &nbsp; Initializing the graph on a reactable </h2>
+<p>When the user connects the computer with the tool/software to the reactable, he can now play with the actual reactable. The computer screen will show something similar to the next figure: scans of the blocks, called fiducials. The fiducials allow distinguishing a unique ID, location and rotation of blocks. </p>
+<p></p>
+<div align = "center"><img  src="images/fluid.png" />
+<p><i>Figure: Image recognition of blocks; fiducials.</i></p>
+</div>
+<p></p>
+
+<p>The real fun happens on the reactable. More than a user can play with the software. They can add blocks, change the blocks location, or rotation, remove blocks. The blocks can be nodes or special objects. The users can also use two fingers to deactivate an active edge (road becomes under construction), or activate a deactivated edge (road is no longer under construction). After each change, the users and the users can see how the tour changes. </p>
+
+<p>Below I present some of the pictures of the reactable in use. I will also provide links to videos where you can see different aspects of the software in use. I highly recommend watching them, because it will give a better understanding of this interactive project. They are also fun to watch. </p>
+<p></p>
+
+<div align ="center">
+<img  height = 500px width = 600px src="images/1.jpg" />
+<p><i>Figure: Algorithm has found the local optimal tour. </i></p>
+</div>
+<p></p>	
+
+<div align ="center">
+<img  height = 500px width = 600px src="images/2.jpg" />
+<p><i>Figure: Algorithm has found local optimal. Notice the special object. </i></p>
+</div>
+<p></p>	
+
+<div align ="center">
+<img  height = 500px width = 600px src="images/3.jpg" />
+<p><i>Figure: Algorithm is still running. The text is showing the value of the Current Solution. Notice the blue screen.</i></p>
+</div>
+<p></p>	
+
+<div align ="center">
+<img  height = 500px width = 600px src="images/4.jpg" />
+<p><i>Figure: Algorithm has found a solution.  </i></p>
+</div>
+<p></p>	
+
+<h2>2 &#46; 7 &#46;  &nbsp;  Videos </h2>
+
+<div >
+			<p>Trying with nodes/normal objects only. Also, graph modifications:</p>
+			<div align ="center"><iframe width="560" height="400"  src="https://www.youtube.com/embed/8AElEcP6RRI" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+			
+			<p>Introducing the special objects:</p>
+			<div align ="center">
+			<iframe width="560" height="400" src="https://www.youtube.com/embed/77iGmgfHRLg" frameborder="0" allowfullscreen></iframe> </div>
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+			
+			<p>More special object:</p>
+			<div align ="center">
+			<iframe width="560" height="400" src="https://www.youtube.com/embed/818DeMoJ6jc" frameborder="0" allowfullscreen></iframe> </div>
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+
+
+			<p>Deactivating edges:</p>
+			<div align ="center">
+			<iframe width="560" height="400" src="https://www.youtube.com/embed/h5u5ggaJFrQ" frameborder="0" allowfullscreen></iframe>	</div>		
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+			
+
+			<p>Re-activating edges:</p>
+			<div align ="center">
+			<iframe width="560" height="400" src="https://www.youtube.com/embed/WjZQ3Wd78zQ" frameborder="0" allowfullscreen></iframe></div>
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+			
+			<p>Removing blocks:</p>
+			<div align ="center">
+			<iframe width="560" height="400" src="https://www.youtube.com/embed/MhEQ3EK-NF0" frameborder="0" allowfullscreen></iframe></div>
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+
+			<p>No solution found:</p>
+			<div align ="center">
+			<iframe width="560" height="400" src="https://www.youtube.com/embed/mh7j5G9A8_0" frameborder="0" allowfullscreen></iframe></div>
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+		    
+<h2> 3 &#46;  &nbsp; Code </h2>		
+<p>The code can be found at: </p> 
+			<p><a href="url">
+https://github.com/manjola/TSP_visualize_on_reactable/tree/master/Code</a></p>
+
+<p></p>
+<p></p>
+			<p>The entire project can be found at:</p>
+			<p><a href = "url">
+https://github.com/manjola/TSP_visualize_on_reactable/</a></p>
+<p></p>
+
+<h2>4 &#46;  &nbsp;  Considerations</h2>
+<p>When using the reactable, there is some noise that can cause the display to sometimes be slightly off the blocks and fingers. This is a point for future improvement. </p>
+<p></p>
+
+<h2>5 &#46;  &nbsp;  News</h2>
+<p>The tool I built will be used as a pedagogical tool by the university when teaching algorithms. It will also be used at university open nights as a way to attract the public (especially kids) to research and computer science. </p>
+<p></p>
+
+<h2>6 &#46;  &nbsp; Contributions</h2>
+<p>Here I present my contributions to the project:</p>
+
+<p>1.	Created a tool for visualizing algorithms (Travelling Salesman Problem, etc.) in a fun, dynamic and visually pleasing manner, on both a tangible user interface reactable machine and personal computers. </p>
+<p>2.	Extended TSP to a represent a simplified version of a real world scenario: travelling between a region of cities, where some roads experience traffic jams and constructions. </p>
+<p>3.	Extended the use of a reactable to algorithm visualization, and traffic jam and road construction simulations. </p>
+<p>4.	Presented an example of the tool running on a reactable and computer, using a 2-opt TSP algorithm.</p> 
+<p>5.	Created a pedagogical tool for visualizing and teaching algorithms. </p>
+<p>6.	Created a tool/demonstration to attract people (especially kids) to research and computer science. </p>
+<p></p>
+
+<h2>Acknowledgment</h2>
+<p>This project was done as part of the Post-Bachelor program 2013 [4], a project summer school of HGS MathComp. </p>
+
+<p>The program is targeted to students in their last year or immediately after their bachelor studies. In scientific projects participants get first-hand experience on doing own research in one of the key labs of the graduate school (applied mathematics, computer science, computational physics, systems biology ...). This serves as an introduction to a possible entry into the postgraduate and PhD programs at Heidelberg University. </p>
+
+<p>I would like to thank you the people in charge of the program for considering my application, and the fact that I had enough technical and research background to participate, even though I was not yet a senior at the time. </p>
+<p></p>
+
+<h2>References</h2>
+<p>[1] Reactable information: <a href = "url"> https://en.wikipedia.org/wiki/Reactable </a></p>
+
+<p>[2] Reactable at Heidelberg University: <a href = "url">
+http://joanna.iwr.uni-heidelberg.de/projects/HOLODECK/projekt.html </a></p>
+
+<p>[3] TUIO software:<a href = "url"> http://www.tuio.org/?software </a></p>
+
+<p>[4] Post-Bachelor Program, HGS MathComp:<a href = "url">
+ http://www.mathcomp.uni-heidelberg.de/programs/post-bachelor-program/ </a></p>
+
+	
+		</div><!--close content_item-->
+		</div><!--close content_item-->
+      </div><!--close content-->   
+	</div><!--close site_content-->  	
+
+	
+    <footer>
+	This is a modified version. (Original) Website template by <a href="http://www.freehtml5templates.co.uk">Free HTML5 Templates</a>
+    </footer>	
+  
+  </div><!--close main-->
+
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/image_slide.js"></script>	
+  
+</body>
+</html>
