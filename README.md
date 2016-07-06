@@ -1,6 +1,6 @@
 ##"Dynamic Visualization of Algorithms for Solving the Travelling Salesman Problem (TSP) and TSP’s Extensions to Real Word Scenarios on a Reactable Machine"
 
-####Author: Manushaqe Muco
+###Author: Manushaqe Muco
 
 
 
